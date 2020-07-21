@@ -1,0 +1,25 @@
+### Main Telescope parameter input file ###
+
+## File Names (these files have to be in the 'etc_data/background/', 'etc_data/filter/', and 'etc_data/spec_throughput/' directories
+bk_filename		backgrounds_mjy_per_str_ra_53.1_dec_-27.8.txt	# File name of sky background file
+tp_filename		throughputSpec_NIR.txt							# File name of spectral throughput file
+filt_filename	filter_NIR.txt									# File name of filter transmission file
+
+## linearity limits of detector
+one_per_limit   55900	# one percent non-linearity limit [e-]
+five_per_limit	79550	# five percent non-linearity limit [e-]
+sat_limit		92450	# saturation limit [e-]
+
+## Telescope constants
+AT				490.87	# Area of the telescope ((25/2.)**2 * np.pi) [m2]
+slit_W			2.8		# slit width to measure R_theta [arcsec]
+pix_scale		1.4		# spatial pixel scale [arcsec/px]
+tot_Npix		1231	# Number of pixels in dispersion direction on the detector
+det_RN			15		# Detector readnoise (correlated double sampling) [e-/px]
+Nmirror			2		# Number of mirrors
+
+## Other stats
+disp			6.5		# dispersion [angstrom/px]
+lambda			1.3		# central wavelength [microns]
+dark			0.005	# dark current [e-/s]
+Mref			0.95	# Mirror reflectance
