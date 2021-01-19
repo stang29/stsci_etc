@@ -1,0 +1,8 @@
+All the data has been put into etc_data and is now mixed together
+ -If you want just the SAMOS data, there is a nother folder for it
+
+etc_data:
+    - everything has been restructures so it matches the code
+    - this folder is mostly the same as just for atlas, the only change is that spec_throughput now includes the throughput for SAMOS also
+    - i.e. the background (L2) is now in an L2 folder
+    

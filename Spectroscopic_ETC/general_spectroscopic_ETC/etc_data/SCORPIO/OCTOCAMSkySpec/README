@@ -1,0 +1,52 @@
+
+MosfireSkyspec.tar contains calibrated night sky spectra obtained during the "second light" observing
+run, 3-8 May 2012. 
+
+The spectra are binned in the same way as the spectra come out for mosfire observations.  The files
+<band>sky.eps.msdc.[dat,fits] gives the observed number of e- per second per pixel in one spatial pixel of
+background spectrum, for an entrance slit of 0.7".  They are directly observed quantities, and so
+have already been attenuated by the atmosphere and the mosfire+telescope system.  
+
+The files <band>sky_cal_pA.fits is the same sky spectrum, converted to ergs/s/cm^2/A (i.e., flux calibrated
+for a single spatial row for the 0.7" entrance slit. 
+
+The files <band>sky_cal_pp.fits is the calibrated sky spectrum in units of ergs/s/cm^2/pixel instead (i.e., it
+differs by the bin size in A for a spectral channel from the *_pA* files. 
+
+For example, to obtain mag/arcsec^2 for the sky (vs. wavelength bin) one needs to multiply by 5.56*1.0/0.7=7.9,
+where the factor 5.56 is the number of spatial pixels per arcsec^2, and the factor 1.0/0.7 corresponds to 
+widening the slit to 1" from 0.7". 
+
+Finally, the files oh_lines_*.txt are linelists for wavelength calibration, and identified spectra are in 
+eps_<band>sky.ids.eps . 
+
+   -Chuck Steidel, 30 May 2012
+     questions? ccs@astro.caltech.edu
+
+
+Hsky.eps.msdc.dat
+Hsky.eps.msdc.fits
+Hsky_cal_pA.fits
+Hsky_cal_pp.fits
+Jsky.eps.msdc.dat
+Jsky.eps.msdc.fits
+Jsky_cal_pA.fits
+Jsky_cal_pp.fits
+Ksky.eps.msdc.comb.dat
+Ksky.eps.msdc.comb.fits
+Ksky_cal_pA.fits
+Ksky_cal_pp.fits
+README
+Ysky.eps.msdc.dat
+Ysky.eps.msdc.fits
+Ysky_cal_pA.fits
+Ysky_cal_pp.fits
+eps_Hsky.ids.eps
+eps_Jsky.ids.eps
+eps_Ksky.ids.eps
+eps_Ysky.ids.eps
+oh_lines_H.txt
+oh_lines_J.txt
+oh_lines_K.txt
+oh_lines_Y.txt
+oh_lines_all.txt
